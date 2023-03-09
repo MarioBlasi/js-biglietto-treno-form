@@ -8,12 +8,12 @@ nav {
 }
 .top_price {
   border: 2rem solid rgb(5, 187, 30);
-  height: 350px;
+  height: 300px;
   border-radius: 5rem;
 }
 .bottom_ticket {
   border: 2rem solid rgb(219, 0, 0);
-  height: 350px;
+  height: 300px;
   border-radius: 5rem;
 }
 .dati,
@@ -21,4 +21,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.bottom_ticket {
+  align-items: center;
+}
+.greybox {
+  border: 1px solid black;
+  background-color: gray;
+  height: 50%;
+}
+.whitebox {
+  border: 1px solid black;
+  background-color: wheat;
+  height: 50%;
 }

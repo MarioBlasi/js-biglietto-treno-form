@@ -23,11 +23,11 @@ scrivere un programma che chieda all’utente:
 //Seleziono il pulsante tramite querySelector
 // prezzo finale riportato fuori nel browser
 
-const userKm = prompt("quanti km vuoi percorrere?");
+const userKm = input("quanti km vuoi percorrere?");
 console.log(userKm);
 /*---------chilometri da fare----*/
 
-const userAge = prompt("quanti anni hai?");
+const userAge = input("quanti anni hai?");
 console.log(userAge);
 /*--------etá del passeggero----*/
 
