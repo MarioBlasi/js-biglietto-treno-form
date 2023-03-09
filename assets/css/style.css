@@ -1,0 +1,16 @@
+nav {
+  background-color: rgb(216, 192, 192);
+  height: 800px;
+}
+.container {
+  border: 1px solid black;
+  height: 700px;
+}
+.top_price {
+  border: 2rem solid rgb(5, 187, 30);
+  height: 350px;
+}
+.bottom_ticket {
+  border: 2rem solid rgb(219, 0, 0);
+  height: 350px;
+}
