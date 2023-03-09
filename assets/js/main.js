@@ -23,13 +23,27 @@ scrivere un programma che chieda all’utente:
 //Seleziono il pulsante tramite querySelector
 // prezzo finale riportato fuori nel browser
 
+//const userAge = document.getElementById("userAge").value;
+
+const generaBtn = document.querySelector("button:nth-of-type(1)");
+
+generaBtn.addEventListener("click", function () {
+  console.log("Pulsante Genera cliccato");
+});
+/*--------BUTTON- GENERA---*/
+const cancellaBtn = document.querySelector("button:nth-of-type(2)");
+
+cancellaBtn.addEventListener("click", function () {
+  console.log("Pulsante cancella cliccato");
+});
+/*--------BUTTON- CANCELLA--*/
+
 const userKm = prompt("quanti km vuoi percorrere?");
 console.log(userKm);
 /*---------chilometri da fare----*/
 
 const userAge = prompt("quanti anni hai?");
 console.log(userAge);
-
 /*--------etá del passeggero----*/
 
 const prezzoKm = 0.21;
@@ -58,5 +72,4 @@ priceElement.innerHTML = spesa;
 /* massimo due decimali,
 per indicare centesimi sul prezzo*/
 
-const btnEl = document.querySelector("button");
 /*----pulsante tramite querySelector---*/
