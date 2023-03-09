@@ -55,7 +55,6 @@ console.log(priceElement);
 priceElement.innerHTML = spesa;
 /*Stampo a schermo il risultato*/
 
-Math.floor(Math.random(spesa) * 100) + 1;
 /* massimo due decimali,
 per indicare centesimi sul prezzo*/
 
