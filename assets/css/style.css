@@ -14,3 +14,8 @@ nav {
   border: 2rem solid rgb(219, 0, 0);
   height: 350px;
 }
+.dati {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
