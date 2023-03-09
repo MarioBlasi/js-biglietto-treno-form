@@ -28,48 +28,27 @@ scrivere un programma che chieda all’utente:
 const generaBtn = document.querySelector("button:nth-of-type(1)");
 
 generaBtn.addEventListener("click", function () {
-  console.log("Pulsante Genera cliccato");
+  const nome = document.getElementById("nome").value;
+  const userKm = document.getElementById("userKm").value;
+  const userAge = document.getElementById("userAge").value;
+  const prezzoKm = 0.21;
+  let spesa = userKm * prezzoKm;
+
+  if (userAge < 18) {
+    (spesa * 20) / 100;
+  } else if (userAge >= 65) {
+    (spesa * 40) / 100;
+  }
+
+  const priceElement = document.getElementById("price");
+  priceElement.innerHTML = spesa.toFixed(2) + " £";
 });
-/*--------BUTTON- GENERA---*/
+
 const cancellaBtn = document.querySelector("button:nth-of-type(2)");
 
 cancellaBtn.addEventListener("click", function () {
-  console.log("Pulsante cancella cliccato");
+  const userData = document.getElementById("userData");
+  userData.reset();
+  const priceElement = document.getElementById("price");
+  priceElement.innerHTML = "0.00 £";
 });
-/*--------BUTTON- CANCELLA--*/
-
-const userKm = prompt("quanti km vuoi percorrere?");
-console.log(userKm);
-/*---------chilometri da fare----*/
-
-const userAge = prompt("quanti anni hai?");
-console.log(userAge);
-/*--------etá del passeggero----*/
-
-const prezzoKm = 0.21;
-console.log(prezzoKm);
-/*-------prezzo a singolo km----*/
-
-const spesa = userKm * prezzoKm;
-console.log(spesa);
-/*-------i km da fare per il prezzo al singolo km----*/
-
-if (userAge < 18) {
-  ((spesa * 20) / 100).toFixed(2);
-} else if (userAge >= 65) {
-  ((spesa * 40) / 100).toFixed(2);
-}
-console.log(spesa);
-/*-------Discount 18/65----*/
-
-const priceElement = document.getElementById("price");
-console.log(priceElement);
-/*seleziono e salvo in una variabile un elemento della dom con getElementById*/
-
-priceElement.innerHTML = spesa;
-/*Stampo a schermo il risultato*/
-
-/* massimo due decimali,
-per indicare centesimi sul prezzo*/
-
-/*----pulsante tramite querySelector---*/
