@@ -23,12 +23,13 @@ scrivere un programma che chieda all’utente:
 //Seleziono il pulsante tramite querySelector
 // prezzo finale riportato fuori nel browser
 
-const userKm = input("quanti km vuoi percorrere?");
+const userKm = prompt("quanti km vuoi percorrere?");
 console.log(userKm);
 /*---------chilometri da fare----*/
 
-const userAge = input("quanti anni hai?");
+const userAge = prompt("quanti anni hai?");
 console.log(userAge);
+
 /*--------etá del passeggero----*/
 
 const prezzoKm = 0.21;
@@ -40,9 +41,9 @@ console.log(spesa);
 /*-------i km da fare per il prezzo al singolo km----*/
 
 if (userAge < 18) {
-  (spesa * 20) / 100;
+  ((spesa * 20) / 100).toFixed(2);
 } else if (userAge >= 65) {
-  (spesa * 40) / 100;
+  ((spesa * 40) / 100).toFixed(2);
 }
 console.log(spesa);
 /*-------Discount 18/65----*/
