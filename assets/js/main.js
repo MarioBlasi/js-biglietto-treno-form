@@ -32,7 +32,7 @@ generaBtn.addEventListener("click", function () {
   const userKm = document.getElementById("userKm").value;
   const userAge = document.getElementById("userAge").value;
   const prezzoKm = 0.21;
-  let spesa = userKm * prezzoKm;
+  const spesa = userKm * prezzoKm;
 
   if (userAge < 18) {
     (spesa * 20) / 100;
@@ -43,6 +43,9 @@ generaBtn.addEventListener("click", function () {
   const priceElement = document.getElementById("price");
   priceElement.innerHTML = spesa.toFixed(2) + " £";
 });
+
+price.style.color = "red";
+price.bold();
 
 const cancellaBtn = document.querySelector("button:nth-of-type(2)");
 
